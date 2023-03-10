@@ -1,0 +1,13 @@
+# 백준 18870 : 좌표 압축
+
+1. 입력받은 array 를 set, sort를 이용해 중복제거, 정렬하여 sorted_list에 저장한다.
+2. 정렬되었을때, 값의 인덱스값이 원하는 결과 값이다.
+
+[고민]
+1. 정렬 후, 인덱스 값을 어떻게 가져올 것인가
+
+
+[해결]
+1. dictionary를 사용하여 {키 : 값} 를 가져오기
+    - for 문 과 함께 사용
+        dic = {sorted_list[i]:i for i in range(len(sorted_list))}
